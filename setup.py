@@ -6,6 +6,7 @@ setup(
     install_requires=[
         'beautifulsoup4',
         'gdata',
+        'sh',
         'youtube_dl',
     ],
 

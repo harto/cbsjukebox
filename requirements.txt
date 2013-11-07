@@ -1,4 +1,0 @@
-beautifulsoup4
-gdata
-sh
-youtube_dl
