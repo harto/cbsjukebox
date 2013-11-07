@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-
-# Scrapes the CBS Orchestra playlist from Anton Fig's website and downloads a
-# sample of each song.
-
 import bs4
 import re
 import urllib2
@@ -30,13 +25,3 @@ def parse_playlist(url='http://www.antonfig.com/lnsongs.htm'):
         return (normalise_artist(artist), normalise_title(title))
 
     return map(to_playlist_entry, playlist_rows)
-
-
-def extract_audio(artist, title):
-    # TODO: see https://github.com/ralphbean/clip-the-gym/blob/master/clipthegym/__init__.py
-
-
-if __name__ == '__main__':
-    playlist = parse_playlist()
-    for artist, title in playlist:
-        print artist, title
